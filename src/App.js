@@ -5,11 +5,15 @@ import Home from "./pages/Home"
 import Experience from "./pages/Experience"
 import Project from "./pages/Project"
 import Projects from "./pages/Projects"
+import ProjectList from './components/ProjectList'
 import NavBar from "./components/NavBar"
+
+
 
 function App() {
   return (
     <div className="App">
+      <p></p>
       <NavBar/>
       <Routes>
         <Route exact path="/" element={<Home />}/>
