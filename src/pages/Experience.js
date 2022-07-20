@@ -1,123 +1,112 @@
 import React from "react";
-import Timeline from '@mui/lab/Timeline';
-import TimelineItem from '@mui/lab/TimelineItem';
-import TimelineSeparator from '@mui/lab/TimelineSeparator';
-import TimelineConnector from '@mui/lab/TimelineConnector';
-import TimelineContent from '@mui/lab/TimelineContent';
-import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
-import TimelineDot from '@mui/lab/TimelineDot';
-import Typography from '@mui/material/Typography';
+import {
+    VerticalTimeline,
+    VerticalTimelineElement,
+  } from "react-vertical-timeline-component";
+  import "react-vertical-timeline-component/style.min.css";
 import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
+import RowingIcon from "@mui/icons-material/Rowing";
 
 function Experience() {
     return(
-        <Timeline position="alternate">
-      <TimelineItem>
-        <TimelineOppositeContent
-          sx={{ m: 'auto 0' }}
-          align="right"
-          variant="body2"
-          color="text.secondary"
+        <div className="experience">
+      <VerticalTimeline lineColor="#3e497a">
+        <VerticalTimelineElement
+          className="vertical-timeline-element--education"
+          date="2016-2020"
+          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          icon={<SchoolIcon />}
         >
-          2016-2020
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot>
-            <SchoolIcon />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: '12px', px: 2 }}>
-          <Typography variant="h6" component="span">
+          <h3 className="vertical-timeline-element-title">
             Princeton University
-          </Typography>
-          <Typography>Economics, Finance</Typography>
-        </TimelineContent>
-      </TimelineItem>
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Major: Economics, Minor: Finance
+          </h4>
+          <ul>
+            <li>
+                Graduated Magna Cum Laude
+            </li>
+            <li>
+                3.7 GPA
+            </li>
+            <li>
+                D1 Varsity Athlete on the Men's rowing team
+            </li>
+          </ul>
+        </VerticalTimelineElement>
 
 
-
-      <TimelineItem>
-        <TimelineOppositeContent
-          sx={{ m: 'auto 0' }}
-          variant="body2"
-          color="text.secondary"
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="2020 - 2021"
+          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          icon={<WorkIcon />}
         >
-          2016-2020
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot color="primary">
-            <WorkIcon />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent sx={{ py: '12px', px: 2 }}>
-          <Typography variant="h6" component="span">
+          <h3 className="vertical-timeline-element-title">
             Fremont Group
-          </Typography>
-          <Typography>Accounting Analyst</Typography>
-        </TimelineContent>
-      </TimelineItem>
+          </h3>
 
+          <h4 className="vertical-timeline-element-subtitle">
+            Accounting Analyst
+          </h4>
 
+          <ul>
+            <li>
+            Managed over 40 accounts for ultra-high-net-worth individuals at a family office with over $5B AUM
+            </li>
+            <li>
+            Responsibilities included booking transactions, account reconciliation, sending payments to creditors, ad hoc data collection and analysis, and training new analyst and associate hires
+            </li>
+          </ul>
 
-      <TimelineItem>
-        <TimelineOppositeContent
-            sx={{ m: 'auto 0' }}
-            align="right"
-            variant="body2"
-            color="text.secondary"
-            >
-            2020 - present
-        </TimelineOppositeContent>
+        </VerticalTimelineElement>
 
-        <TimelineSeparator>
-          <TimelineConnector />
-          <TimelineDot color="primary" variant="outlined">
-            <SchoolIcon />
-          </TimelineDot>
-          <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
-        </TimelineSeparator>
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="2021 - 2022"
+          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          icon={<SchoolIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            Flatiron School
+          </h3>
+          <ul>
+            <li>
+                Immersive full stack software engineering course
+            </li>
+            <li>
+                Learned front end skills including JavaScript, ReactJS, HTML, and CSS
+            </li>
+            <li>
+                Learned back end skills including Ruby, Ruby on Rails, SQL, ProgreSQL
+            </li>
 
-        <TimelineContent sx={{ py: '12px', px: 2 }}>
-          <Typography variant="h6" component="span">
-            US Senior national team
-          </Typography>
-          <Typography>training to compete at the olmpics in rowing</Typography>
-        </TimelineContent>
-      </TimelineItem>
+          </ul>
+        </VerticalTimelineElement>
 
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="2020 - present"
+          iconStyle={{ background: "#3e497a", color: "#fff" }}
+          icon={<RowingIcon />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            US senior national rowing team
+          </h3>
+          <ul>
+            <li>
+                Member of the US national team for the 2022 Senior World Championships
+            </li>
+            <li>
+                Qualified to compete at the 2021 Senior World Championships in the 2-
+            </li>
+          </ul>
+        </VerticalTimelineElement>
 
-
-      <TimelineItem>
-        <TimelineOppositeContent
-            sx={{ m: 'auto 0' }}
-            align="right"
-            variant="body2"
-            color="text.secondary"
-            >
-            2022
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
-          <TimelineDot color="secondary">
-            <SchoolIcon />
-          </TimelineDot>
-          <TimelineConnector />
-        </TimelineSeparator>
-
-        <TimelineContent sx={{ py: '12px', px: 2 }}>
-          <Typography variant="h6" component="span">
-            Flatiron school
-          </Typography>
-          <Typography>Immersive full stack engineering course</Typography>
-        </TimelineContent>
-      </TimelineItem>
-
-    </Timeline>
+      </VerticalTimeline>
+    </div>
     )
 }
 
