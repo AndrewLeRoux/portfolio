@@ -12,7 +12,7 @@ function Project({ image, name, description, id}) {
         <div className = "projectItem" onClick={handleClick}>
             <div style={{ backgroundImage: `url(${image})` }} className="bgImage" />
             <h1> {name}</h1>
-            <p> {description} </p>
+            
             
         </div>
     )

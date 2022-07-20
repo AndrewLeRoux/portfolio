@@ -62,6 +62,10 @@ const AboutH2 = styled.div`
   font-size: 60px;
   color: rgb(205, 57, 57);
   height: 50px;
+  @media only screen and (max-width: 650px) {
+    font-size: 40px;
+  }
+  
 `
 
 const AboutDetails = styled.div`
@@ -69,6 +73,11 @@ const AboutDetails = styled.div`
   font-size: 30px;
   margin: 20px;
   color: white;
+  @media only screen and (max-width: 650px) {
+    margin-top: 10px;
+    font-size: 20px;
+    width: 80%;
+  }
 `
 
 const Skills = styled.div`
@@ -78,12 +87,15 @@ const Skills = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 `
 
 const List = styled.ol`
   list-style: none;
-  width: 60%;
+  
 `
+
+
 
 export default Home;
   

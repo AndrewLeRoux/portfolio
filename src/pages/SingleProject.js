@@ -13,7 +13,10 @@ function SingleProject() {
             <img src={project.image} alt="projectimg"/>
             <p>
                 <b>Description:</b> {project.description}
+                <br/>
+                <b>Link: </b><a href={project.link}>{project.name}</a>
             </p>
+            
         </div>
     )
 }
