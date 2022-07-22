@@ -28,8 +28,8 @@ function NavBar() {
 const NavBarDiv = styled.div`
     width: 100%;
     height: 70px;
-    background: #21325e;
-    color: white;
+    background: #2f3b70;
+    color: #eeeeee;
     text-decoration: none;
     font-size: 25px;
 `

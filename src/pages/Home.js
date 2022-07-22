@@ -5,6 +5,8 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import styled from "styled-components";
 
 function Home() {
+
+
     return(
       <HomeDiv>
       <About>
@@ -12,9 +14,9 @@ function Home() {
         <br></br>
         <AboutDetails>
           <p>I'm a full stack software engineer and a full time athlete on the US national rowing team.</p>
-          <LinkedInIcon />
-          <EmailIcon />
-          <GitHubIcon />
+          <A href="https://www.linkedin.com/in/andrew-leroux-07066516b/"><LinkedInIcon /></A> 
+          <A href = "mailto: andrewleroux2639@gmail.com"><EmailIcon /></A> 
+          <A href="https://github.com/AndrewLeRoux"><GitHubIcon /></A> 
         </AboutDetails>
       </About>
       <Skills>
@@ -38,11 +40,17 @@ function Home() {
     )
 }
 
+
+const A = styled.a`
+color: #eeeeee;
+text-decoration: none;
+`
+
 const HomeDiv = styled.div`
   width: 100%;
   align-items: center;
   font-family: "Arial", sans-serif;
-  color: #3e497a;
+  color: #2f3b70;
 `
 
 const About = styled.div`
@@ -53,8 +61,8 @@ const About = styled.div`
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #21325e;
-  color: #f0f0f0;
+  background-color: #2f3b70;
+  color: #eeeeee;
 `
 
 const AboutH2 = styled.div`
@@ -72,7 +80,7 @@ const AboutDetails = styled.div`
   width: 40%;
   font-size: 30px;
   margin: 20px;
-  color: white;
+  color: #eeeeee;
   @media only screen and (max-width: 650px) {
     margin-top: 10px;
     font-size: 20px;
@@ -87,7 +95,7 @@ const Skills = styled.div`
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  text-align: center;
+  text-align: left;
 `
 
 const List = styled.ol`
