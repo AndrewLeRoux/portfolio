@@ -13,13 +13,12 @@ function Home() {
         <AboutH2> Hi, My Name is Andrew</AboutH2>
         <br></br>
         <AboutDetails>
-          <p>I'm a full stack software engineer and a full time athlete on the US national rowing team.</p>
+          <p>I'm a full stack software developer and a full time athlete on the US National Rowing Team.</p>
           <A href="https://www.linkedin.com/in/andrew-leroux-07066516b/"><LinkedInIcon /></A> 
           <A href = "mailto: andrewleroux2639@gmail.com"><EmailIcon /></A> 
           <A href="https://github.com/AndrewLeRoux"><GitHubIcon /></A> 
         </AboutDetails>
-      </About>
-      <Skills>
+        <Skills>
         <h1> Skills</h1>
         <List>
         <li>
@@ -36,6 +35,8 @@ function Home() {
         </li>
         </List>
       </Skills>
+      </About>
+      
     </HomeDiv>
     )
 }
@@ -55,7 +56,7 @@ const HomeDiv = styled.div`
 
 const About = styled.div`
   width: 100%;
-  height: calc(100vh - 100px);
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -89,7 +90,7 @@ const AboutDetails = styled.div`
 `
 
 const Skills = styled.div`
-  font-size: 20px;
+  font-size: 16px;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -100,7 +101,6 @@ const Skills = styled.div`
 
 const List = styled.ol`
   list-style: none;
-  
 `
 
 
